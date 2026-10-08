@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><title>AstroByte - OAuth relay</title></head>
+<body><p>Completing TikTok authorization...</p>
+<script>
+(function () {
+  var q = location.search + (location.hash || "");
+  var target = "http://localhost:8790/callback" + (q || "?status=no_code");
+  location.replace(target);
+})();
+</script>
+</body></html>
